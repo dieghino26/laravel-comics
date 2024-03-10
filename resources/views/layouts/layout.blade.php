@@ -23,6 +23,12 @@
 
     {{-- Jumbotron --}}
     @include('includes.jumbotron')
+
+    <main>
+        @yield('main-content')
+    </main>
+
+    @include('includes.footer')
 </body>
 
 </html>
