@@ -8,59 +8,18 @@
     <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="images/ico">
     <title>DC Comics</title>
 
-    <!-- Fonts -->
-
+    <!-- FontsAwesome -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'
+        integrity='sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=='
+        crossorigin='anonymous' />
     <!-- Styles -->
     @vite('resources/js/app.js')
 
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="{{ asset('images/dc-logo.png') }}" alt="DC logo">
-        </div>
-        <div class="nav">
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">CHARACTERS</a>
-                    </li>
-                    <li>
-                        <a href="#">COMICS</a>
-                    </li>
-                    <li>
-                        <a href="#">MOVIES</a>
-                    </li>
-                    <li>
-                        <a href="#">TV</a>
-                    </li>
-                    <li>
-                        <a href="#">GAMES</a>
-                    </li>
-                    <li>
-                        <a href="#">COLLECTIBLES</a>
-                    </li>
-                    <li>
-                        <a href="#">VIDEOS</a>
-                    </li>
-                    <li>
-                        <a href="#">FANS</a>
-                    </li>
-                    <li>
-                        <a href="#">NEWS</a>
-                    </li>
-                    <li>
-                        <a href="#">SHOP</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Search">
-        </div>
-    </header>
+    {{-- Header --}}
+    @include('includes.header')
 </body>
 
 </html>
