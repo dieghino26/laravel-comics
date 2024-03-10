@@ -20,6 +20,9 @@
 <body>
     {{-- Header --}}
     @include('includes.header')
+
+    {{-- Jumbotron --}}
+    @include('includes.jumbotron')
 </body>
 
 </html>
