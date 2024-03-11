@@ -28,6 +28,10 @@
         @yield('main-content')
     </main>
 
+    {{-- InfoNav --}}
+    @include('includes.info')
+
+    {{-- Footer --}}
     @include('includes.footer')
 </body>
 
