@@ -9,7 +9,7 @@
                 <ul>
                     @foreach (config('header') as $item)
                         <li>
-                            <a href="#">{{ $item['text'] }}</a>
+                            <a href="{{ route("{$item['text']}") }}">{{ $item['text'] }}</a>
                         </li>
                     @endforeach
                 </ul>
