@@ -19,11 +19,17 @@ Route::get('/', function () {
 
 Route::get('/comics', function () {
     $title = 'comics';
-    return view('comics', compact('title'));
+    return view('comics.comics', compact('title'));
 })->name('comics');
 
+Route::get('/comics/{index}', function ($index) {
+    if (!is_numeric($index) || $index < 0 || $index >= count(config('comics'))) abort(404);
+    $comics = config('comics');
+    return view('comics.comic', ['comic' => $comics[$index]]);
+})->name('comic');
+
 Route::get('/characters', function () {
-    $title = 'comics';
+    $title = 'chatacters';
     return view('characters', compact('title'));
 })->name('characters');
 

@@ -8,7 +8,7 @@
             <div class="card-container">
                 @foreach (config('comics') as $comic)
                     <div class="card">
-                        <a href="{{ route('comics', $loop->index) }}">
+                        <a href="{{ route('comic', $loop->index) }}">
                             <figure>
                                 <img src="{{ $comic['thumb'] }}" :alt="img comic">
                             </figure>
