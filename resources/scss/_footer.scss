@@ -1,5 +1,42 @@
+.footer-top {
+    position: relative;
+    height: 500px;
+    bottom: 0;
+    background-image: url(../../public/images/footer-bg.jpg);
+    background-size: cover;
+
+    .container {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        gap: 60px;
+        flex-wrap: wrap;
+        align-content: center;
+
+        ul {
+            list-style-type: none;
+        }
+
+        h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: gray;
+            text-decoration: none;
+        }
+
+    }
+}
+
 .footer-bottom {
     height: 120px;
+    position: absolute;
+    right: 0;
+    left: 0;
 
     .container {
         display: flex;

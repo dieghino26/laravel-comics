@@ -1,5 +1,26 @@
 <footer>
-    <div class="footer-top"></div>
+    <div class="footer-top">
+        <div class="container">
+
+            <nav class="links-container">
+                @foreach (config('footer_links') as $item)
+                    <div class="footer_links">
+                        <h3>{{ $item['title'] }}</h3>
+                        <ul>
+                            @foreach ($item['links'] as $link)
+                                <li>
+                                    <a href="#">{{ $link['text'] }}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endforeach
+            </nav>
+            <figure>
+                <img src="{{ asset('images/dc-logo-bg.png') }}" alt="DC logo">
+            </figure>
+        </div>
+    </div>
     <div class="footer-bottom">
 
         <div class="container">
